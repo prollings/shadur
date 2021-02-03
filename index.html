@@ -1,0 +1,32 @@
+<html>
+    <body>
+        <div id="canvas_box">
+            <canvas id="main_canvas" width="128" height="128"></canvas>
+        </div>
+        <p>Variables:</p>
+        <p>x, y, r, g, b</p>
+        <p>s = steps, mx and my = mouse position</p>
+        <textarea id="input_box"></textarea>
+        <button id="submit">Submit</button>
+    </body>
+    <script src="./scripts/main.js"></script>
+    <style>
+        body {
+            background-color: #999999;
+        }
+        #main_canvas {
+            image-rendering: crisp-edges;
+            width: 512px;
+        }
+
+        #canvas_box {
+            border-width: 3px;
+            border-color: black;
+        }
+
+        #input_box {
+            width: 512px;
+            height: 128px;
+        }
+    </style>
+</html>
