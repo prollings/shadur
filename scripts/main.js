@@ -35,6 +35,10 @@
     function buildFunc(input) {
         return Function(`
             "use strict";
+            let sin = Math.sin;
+            let cos = Math.cos;
+            let tan = Math.tan;
+            let pi = Math.PI;
             return ((x, y, r, g, b, s, mx, my) => {
                 ` + input + `
                 return [r, g, b];
