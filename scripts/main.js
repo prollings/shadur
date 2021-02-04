@@ -1,6 +1,8 @@
 (() => {
     let inputBox = document.getElementById("input_box");
     let submitBtn = document.getElementById("submit");
+    let resetBtn = document.getElementById("reset");
+    let submitResetBtn = document.getElementById("submit_reset");
     let canvas = document.getElementById("main_canvas");
     let ctx = canvas.getContext("2d");
     let size = 128;
@@ -14,7 +16,15 @@
 
     submitBtn.addEventListener("click", () => {
         shaderFunc = buildFunc(inputBox.value);
+    });
 
+    resetBtn.addEventListener("click", () => {
+        ticks = 0;
+    });
+
+    submitResetBtn.addEventListener("click", () => {
+        shaderFunc = buildFunc(inputBox.value);
+        ticks = 0;
     });
 
     canvas.addEventListener("mousemove", (ev) => {
