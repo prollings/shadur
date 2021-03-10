@@ -38,6 +38,8 @@
             let sin = Math.sin;
             let cos = Math.cos;
             let tan = Math.tan;
+            let pow = Math.pow;
+            let sqrt = Math.sqrt;
             let pi = Math.PI;
             return ((x, y, r, g, b, s, mx, my) => {
                 ` + input + `
